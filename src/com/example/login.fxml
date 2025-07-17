@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logincontroller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="46.0" prefWidth="77.0" text="聊天吧" GridPane.halignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="用户账号" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passWord" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="用户密码" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button mnemonicParsing="false" onAction="#login" prefHeight="33.0" prefWidth="70.0" text="登录" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
